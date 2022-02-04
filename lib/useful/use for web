@@ -1,0 +1,8 @@
+options: const FirebaseOptions(
+      apiKey: "AIzaSyDoPLTb13rnu84cRbyPg86VmDaXWgIOjZI", // Your apiKey
+      appId:  "1:4479502221:web:37adbacb5f11165af65fc4", // Your appId
+      messagingSenderId: "4479502221", // Your messagingSenderId
+      projectId: "log-in-demo-330d6", // Your projectId
+       storageBucket: "log-in-demo-330d6.appspot.com",
+       authDomain: "log-in-demo-330d6.firebaseapp.com"
+    ),

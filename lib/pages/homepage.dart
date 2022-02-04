@@ -72,57 +72,62 @@ class _HomePageState extends State<HomePage> {
         body: Center(
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 100.0, horizontal: 40),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                SizedBox(
-                    height: 100,
-                    child: SvgPicture.asset(
-                      "images/welcome2.svg",
-                      height: 500,
-                      width: 2,
-                      fit: BoxFit.fill,
-                    )),
-                const SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  '${signedInUser.firstName} ${signedInUser.surname}',
-                  style: const TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 17),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  'Your Email is \n\n${signedInUser.email}',
-                  style: const TextStyle(
-                      color: Colors.black38,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 16),
-                ),
-                const SizedBox(
-                  height: 100,
-                ),
-                SizedBox(
-                    height: 100,
-                    child: SvgPicture.asset(
-                      "images/done2.svg",
-                      fit: BoxFit.contain,
-                    )),
+            child: SingleChildScrollView(
+              child: SafeArea(
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    SizedBox(
+                        height: 100,
+                        child: SvgPicture.asset(
+                          "images/welcome2.svg",
+                          height: 500,
+                          width: 2,
+                          fit: BoxFit.fill,
+                        )),
                     const SizedBox(
-                  height: 70,
+                      height: 20,
+                    ),
+                    Text(
+                      '${signedInUser.firstName} ${signedInUser.surname}',
+                      style: const TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 17),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      'Your Email is \n\n${signedInUser.email}',
+                      style: const TextStyle(
+                          color: Colors.black38,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16),
+                    ),
+                    const SizedBox(
+                      height: 100,
+                    ),
+                    SizedBox(
+                        height: 100,
+                        child: SvgPicture.asset(
+                          "images/done2.svg",
+                          fit: BoxFit.contain,
+                        )),
+                        const SizedBox(
+                      height: 70,
+                    ),
+                   const Text(
+                      'Thank you for visiting my App',
+                      style: TextStyle(
+                          color: Colors.black38,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16),
+                    ),
+                  ],
                 ),
-               const Text(
-                  'Thank you for visiting my App',
-                  style: TextStyle(
-                      color: Colors.black38,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 16),
-                ),
-              ],
+              ),
             ),
           ),
         ),
