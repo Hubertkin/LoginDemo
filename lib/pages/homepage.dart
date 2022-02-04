@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:log_in_app/authentication_service.dart';
+import 'package:log_in_app/services/authentication_service.dart';
 import 'package:log_in_app/model/user_model.dart';
 import 'package:log_in_app/pages/sign_in_page.dart';
 import 'package:provider/provider.dart';

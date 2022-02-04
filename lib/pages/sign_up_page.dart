@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:log_in_app/authentication_service.dart';
+import 'package:log_in_app/services/authentication_service.dart';
 import 'package:log_in_app/pages/homepage.dart';
 import 'package:log_in_app/model/user_model.dart';
 import 'package:provider/provider.dart';
