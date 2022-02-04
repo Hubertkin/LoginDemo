@@ -17,5 +17,5 @@ samples, guidance on mobile development, and a full API reference.
 
 ## To run the project on the web
 
-Pls if you would like to run the project on the web, pls copy the codes in the use for web in the useful folder and paste it in the firebase.initializeApp() in the main dart file.
+Pls if you would like to run the project on the web, pls copy the codes in the use for web in the useful folder and paste it in the firebase.initializeApp() function in the main dart file.
 After doing this, everything would work perfectly   
